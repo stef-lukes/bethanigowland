@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 600 ||
+                document.documentElement.scrollTop > 600
+            ) {
+                document.getElementById("smallnavbar").style.visibility = "visible";
+                document.getElementById("smalllogo").style.visibility = "visible";
+                document.getElementById("smallnavbar").style.opacity = "1";
+                document.getElementById("smalllogo").style.opacity = "1";
+            } else {
+                document.getElementById("smallnavbar").style.visibility = "hidden";
+                document.getElementById("smalllogo").style.visibility = "hidden";
+                document.getElementById("smallnavbar").style.opacity = "0";
+                document.getElementById("smalllogo").style.opacity = "0";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><h1>BETHANI GOWLAND <span> FASHION STYLIST</span></h1></div>
+        <input type="checkbox" id="drop-menu" />
+        <label for="drop-menu" class="toggle" id='main-toggle'><span class="nav-icon"></span></label>
+        <ul>
+            <li><a href="#">womenswear</a></li>
+            <li><a href="#">menswear</a></li>
+            <li><a href="#">childrenswear</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <div class="photo-container homepage">
+
+        <div class="photo-column">
+            <div class="photo">
+                <img src="assets/landing-page/bethani-fashion-stylist-editorial-gowland-sicky-bintou.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            <div class="photo">
+                <img src="assets/landing-page/bethani-gowland-fashion-stylist-editorial-cake-desert-rose.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            <div class="photo">
+                <img src="assets/landing-page/bethani-gowland-fashion-stylist-ellesse.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            <div class="photo extra-img">
+                <img src="assets/landing-page/yeti-bethani-gowland-fashion-stylist.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="photo-column">
+            <div class="photo">
+                <img src="assets/landing-page/bethani-gowland-fashion-stylist-hunger-magazine.JPG" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            <div class="photo">
+                <img src="assets/landing-page/bethani-gowland-fashion-stylist-money.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            <div class="photo">
+                <img src="assets/landing-page/cake-desert-rose.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            <div class="photo extra-img">
+                <img src="assets/landing-page/soccer-bible-umpers-for-goalposts.JPG" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+        </div>
+
+        <div class="photo-column">
+            <div class="photo">
+                <img src="assets/landing-page/ellesse-liam-hodges-bethani-gowland-fashion-stylist.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            <div class="photo">
+                <img src="assets/landing-page/cake-magazine-2.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            <div class="photo">
+                <img src="assets/landing-page/disorder-day-in-the-neighbourhood.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            
+            <div class="photo extra-img">
+                <img src="assets/landing-page/french-fries-magazine.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+        </div>
+
+        <div class="photo-column fourth-column">
+            <div class="photo">
+                <img src="assets/landing-page/french-fries-magazine.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            <div class="photo">
+                <img src="assets/landing-page/soccer-bible-umpers-for-goalposts.JPG" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+            <div class="photo">
+                <img src="assets/landing-page/yeti-bethani-gowland-fashion-stylist.jpg" alt="" class="image">
+                <a href="#" class="overlay">
+                    <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
