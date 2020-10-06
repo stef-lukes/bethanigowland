@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bethani Gowland Fashion Stylist | Homepage</title>
+    <meta name="description" content="Bethani Gowland is a Manchester based fashion stylist.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="assets/favicon.png">
     <script>
         window.onscroll = function () {
             scrollFunction();
@@ -31,28 +36,66 @@
 </head>
 
 <body>
+
+    <!-- NAVIGATION
+    ---------------------------------- -->
     <nav>
-        <div class="logo"><h1>BETHANI GOWLAND <span> FASHION STYLIST</span></h1></div>
+        <div class="logo">
+            <h1>BETHANI GOWLAND <span> FASHION STYLIST</span></h1>
+        </div>
         <input type="checkbox" id="drop-menu" />
-        <label for="drop-menu" class="toggle" id='main-toggle'><span class="nav-icon"></span></label>
+        <label for="drop-menu" class="toggle" id='menu-toggle'>MENU</label>
         <ul>
-            <li><a href="#">womenswear</a></li>
-            <li><a href="#">menswear</a></li>
-            <li><a href="#">childrenswear</a></li>
+            <li><a href="index.html">home</a></li>
+            <li class="divider">|</li>
+            <li><a href="womenswear.html">womenswear</a></li>
+            <li class="divider">|</li>
+            <li><a href="menswear.html">menswear</a></li>
+            <li class="divider">|</li>
+            <li><a href="childrenswear.html">childrenswear</a></li>
+            <li class="divider">|</li>
             <li><a href="#">contact</a></li>
         </ul>
     </nav>
+
+    <nav id="smallnavbar">
+        <div class="logo" id="smalllogo">
+            <h1>BETHANI GOWLAND</h1>
+        </div>
+        <input type="checkbox" id="drop-menu-2" />
+        <label for="drop-menu-2" class="toggle" id='menu-toggle-2'>MENU</label>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="womenswear.html">womenswear</a></li>
+            <li><a href="menswear.html">menswear</a></li>
+            <li><a href="childrenswear.html">childrenswear</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="social">
+            <a href="https://www.facebook.com/bethani.fashionstylist/" target="blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/bethanig?lang=en" target="blank" class="fa fa-twitter"></a>
+            <a href="https://uk.linkedin.com/in/bethani-gowland-294a5137" target="blank" class="fa fa-linkedin"></a>
+            <a href="https://uk.pinterest.com/bethani1988/" target="blank" class="fa fa-pinterest"></a>
+            <a href="https://www.instagram.com/bethani_stylist/" target="blank" class="fa fa-instagram"></a>
+        </div>
+    </nav>
+    <div class="title"><h3>HOME</h3></div>
+
+    <!-- PAGE CONTENT
+    ---------------------------------- -->
     <div class="photo-container homepage">
 
         <div class="photo-column">
             <div class="photo">
-                <img src="assets/landing-page/bethani-fashion-stylist-editorial-gowland-sicky-bintou.jpg" alt="" class="image">
+                <img src="assets/landing-page/bethani-fashion-stylist-editorial-gowland-sicky-bintou.jpg" alt=""
+                    class="image">
                 <a href="#" class="overlay">
                     <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
                 </a>
             </div>
             <div class="photo">
-                <img src="assets/landing-page/bethani-gowland-fashion-stylist-editorial-cake-desert-rose.jpg" alt="" class="image">
+                <img src="assets/landing-page/bethani-gowland-fashion-stylist-editorial-cake-desert-rose.jpg" alt=""
+                    class="image">
                 <a href="#" class="overlay">
                     <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
                 </a>
@@ -101,7 +144,8 @@
 
         <div class="photo-column">
             <div class="photo">
-                <img src="assets/landing-page/ellesse-liam-hodges-bethani-gowland-fashion-stylist.jpg" alt="" class="image">
+                <img src="assets/landing-page/ellesse-liam-hodges-bethani-gowland-fashion-stylist.jpg" alt=""
+                    class="image">
                 <a href="#" class="overlay">
                     <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
                 </a>
@@ -118,7 +162,7 @@
                     <h3 class="text">SICKY MAGAZINE<br><span>BINTOU</span></h3>
                 </a>
             </div>
-            
+
             <div class="photo extra-img">
                 <img src="assets/landing-page/french-fries-magazine.jpg" alt="" class="image">
                 <a href="#" class="overlay">
@@ -148,6 +192,22 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- FOOTER
+    ---------------------------------- -->
+    <div class="footer">
+        <p>Site design © Stefan Lukes 2020</p>
+        <div class="social">
+            <a href="https://www.facebook.com/bethani.fashionstylist/" target="blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/bethanig?lang=en" target="blank" class="fa fa-twitter"></a>
+            <a href="https://uk.linkedin.com/in/bethani-gowland-294a5137" target="blank" class="fa fa-linkedin"></a>
+            <a href="https://uk.pinterest.com/bethani1988/" target="blank" class="fa fa-pinterest"></a>
+            <a href="https://www.instagram.com/bethani_stylist/" target="blank" class="fa fa-instagram"></a>
+        </div>
+    </div>
+
 </body>
 
 </html>
