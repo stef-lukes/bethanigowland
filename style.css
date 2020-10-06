@@ -11,15 +11,24 @@ body {
 a, a:link, a:visited, a:active {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 300;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    border-bottom: transparent 1px solid;
+    transition: all 0.3s ease;
+}
+a:hover,
+a:active {
+    border-bottom: black 1px solid;
 }
 h1 {
     font-size: 42px;
     text-align: center;
     padding: 1vw 0 0 0;
     margin: 0;
+    letter-spacing: 5px;
 }
 
 
@@ -29,9 +38,13 @@ h1 {
 
 nav {
     width: 100%;
-    padding: 3vw 0 2vw 0;
+    padding: 50px 0 5px 0;
     display: table;
     margin: 0 auto;
+}
+#drop-menu,
+#drop-menu-2 {
+    display: none;
 }
 nav .logo {
     margin: auto;
@@ -39,18 +52,144 @@ nav .logo {
 nav .logo span {
     font-weight: 300;
 }
-#drop-menu {
-    display: none;
-    }
 nav ul {
     list-style: none;
-    margin: 30px auto;
+    margin: 20px auto;
     text-align: center;
 }
 nav ul li {
-    margin: 0 2vw;
     display: inline;
 }
+nav ul .divider {
+    margin: 0 30px;
+    font-weight: 900;
+}
+#menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+#menu-toggle-2 {
+    font-size: 14px;
+    letter-spacing: 5px;
+    float: right;
+    margin-right: 4vw;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#smallnavbar {
+    display: none;
+    visibility: hidden;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: white;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 1em rgb(0, 0, 0, .2);
+}
+#smalllogo {
+    float: left;
+    margin-left: 4vw;
+}
+#smalllogo h1 {
+    font-size: 14px;
+    padding: 0;
+}
+#smallnavbar ul {
+    float: left;
+    text-align: left;
+    margin-left: 4vw;
+}
+#smallnavbar ul li a {
+    font-size: 14px;
+}
+#smallnavbar ul .divider {
+    display: none;
+}
+#smallnavbar .social {
+    margin-right: 4vw;
+    position: absolute;
+    right: 4vw;
+    bottom: 5vw;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+#smallnavbar .social a {
+    opacity: 1 !important;
+}
+.title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 14px;
+    letter-spacing: 4px;
+    }
+.title h3 {
+    font-weight: 500;
+}
+
+/* FOOTER
+---------------------------------------- */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 66px;
+    }
+
+.footer p {
+    opacity: 0.5;
+}
+
+.fa {
+    padding: 0 7px !important;
+    font-size: 20px !important;
+    color: black;
+    width: 12px;
+    height: 10px;
+    opacity: 0.5;
+    border-bottom: none !important;
+    transition: all 0.3s ease-in-out;
+  }
+.fa:hover {
+    opacity: 1;
+    border-bottom: none !important;
+}
+.fa:hover .fa-facebook {
+    color: #3B5998;
+}
+.fa:hover  .fa-twitter {
+    color: #55ACEE;
+}
+.fa:hover .fa-linkedin {
+    color: #007bb5;
+}
+.fa:hover .fa-pinterest {
+    color: #cb2027;
+}
+.fa:hover .fa-pinterest {
+    color: #125688;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer .social {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* LANDING AND SECTION PAGES
+---------------------------------------- */
+
 .photo-container {
     width: 100%;
     padding: 0;
@@ -99,7 +238,7 @@ nav ul li {
     padding: 0.5vw;
     font-family: 'Roboto Condensed';
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     background: white;
     font-weight: 700;
     position: absolute;
@@ -117,4 +256,132 @@ nav ul li {
 .photo-container .photo-column .extra-img {
     display: none;
 }
+.photo-container-3-col,
+.photo-container-1-col {
+    display: none;
+}
 
+
+/* MEDIA QUERIES
+---------------------------------------- */
+
+@media (max-width: 1300px) {
+    .photo-container .photo-column .extra-img {
+        display: block;
+    }
+    .photo-container .fourth-column {
+        display: none;
+    }
+    .photo-container .photo-column {
+        width: 29.5vw;
+    }
+    .photo-container-3-col {
+        display: flex;
+    }
+    .photo-container-4-col,
+    .photo-container-1-col {
+        display: none;
+    }
+    .photo-container .photo-column .photo .overlay .text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1150px) {
+    h1 {
+        font-size: 36px;
+    }
+    a, a:link, a:visited, a:active {
+        font-size: 14px;
+    }
+}
+@media (max-width: 950px) {
+    nav {
+        padding: 50px 0 30px 0;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    nav ul {
+        float:none;
+        max-height: 0;
+        clear: both;
+        overflow-y: hidden;
+        margin: 0;
+        transition: max-height 0.5s ease-in-out;
+    }
+    #drop-menu:checked~ul,
+    #drop-menu-2:checked~ul {
+        display: block;
+        max-height: 700px;
+        width: 100%;
+    }
+    nav ul .divider {
+        display: none;
+    }
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+    #menu-toggle {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .title {
+        display: none;
+    }
+}
+@media (min-width: 950px) {
+    #menu-toggle {
+        display: none;
+        }
+}
+@media (max-width: 750px) {
+    nav {
+        padding: 25px 0 20px 0;
+    }
+    .photo-container {
+        display: unset;
+    }
+    .photo-container-1-col {
+        display: unset;
+    }
+    .photo-container-3-col,
+    .photo-container-4-col {
+        display: none;
+    }
+    .photo-container .photo-column {
+        width: 90%;
+        margin: auto;
+    }
+    .photo-container .photo-column .photo {
+        margin-bottom: 4vw;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .photo-container .photo-column .photo .overlay .text {
+        font-size: 20px;
+    }
+    .photo-container .photo-column .photo .overlay .text span {
+        font-weight: 300;
+    }
+    #smallnavbar {
+        display: unset;
+    }
+    #drop-menu-2:checked~div {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@media (max-width: 600px) {
+    h1 { font-size: 3.5vw; }
+    nav { padding: 15px 0; }
+    .photo-container .photo-column .photo .overlay .text { 
+        font-size: 3vw;
+        letter-spacing: 4px;
+     }
+     #menu-toggle {
+        margin-top: 12px;
+        width: 100%;
+     }
+}
